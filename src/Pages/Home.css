@@ -20,7 +20,6 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Profile name */
 .hname .profilename {
   font-size: 50px;
   font-weight: bold;
@@ -227,7 +226,7 @@
 }
 
 .project-card {
-  background: linear-gradient(145deg, #21262d, #2c313c);
+  background: black;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: black;

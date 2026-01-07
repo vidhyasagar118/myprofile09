@@ -4,11 +4,11 @@ import Home from "./Pages/Home";
 import Footer from "./Pages/Footer";
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Home />
       <Footer />
-    </div>
+    </>
   )
 }
 

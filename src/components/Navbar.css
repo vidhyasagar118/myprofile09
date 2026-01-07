@@ -33,3 +33,33 @@
 .home{
   margin-right: 30vw;
 }
+@media screen and (max-width: 768px) {
+  .navbar li {
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.home{
+  margin-right: 2vw;
+}
+
+.navbar {
+  padding: 5px;
+}
+}
+@media screen and (max-width: 480px) {
+  .navbar li {
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.navbar {
+  
+  padding: 5%;
+}
+.home{
+  margin-right: 1vw;
+}
+}
