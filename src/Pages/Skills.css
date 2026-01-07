@@ -1,0 +1,56 @@
+
+.section4{
+    width: 100vw;
+    height: 70vh;
+    background-color:black;
+    color: white;
+    font-size: 25px;
+   overflow: hidden;
+margin-top: 100px;
+}
+
+
+  #skills {
+            background-color: #0d1117;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 30px 0;
+        }
+
+        .skill-badge {
+            background-color: #21262d;
+            color: #c9d1d9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-family: 'Fira Code', monospace; /* Monospaced font for code/tech */
+            border: 1px solid #30363d;
+            transition: background-color 0.3s;
+        }
+
+        .skill-badge:hover {
+            background-color: #30363d;
+        }
+
+.section5{
+    width: 100vw;
+    height: 90vh;
+    background-color:black;
+    color: white;
+    font-size: 25px;
+   overflow: hidden;
+margin-top: 100px;
+}
+
+.prodiv{
+    background-color: aqua;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}

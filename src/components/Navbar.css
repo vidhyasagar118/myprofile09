@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  margin: 0;
+}
+
+.navbar li {
+  color: white;
+  padding: 10px 30px;
+  margin-left: 8vw;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  background-color: rgb(70, 114, 114);
+}
+
+.homebtn {
+  margin-right: auto;
+}
+
+.home{
+  margin-right: 30vw;
+}
