@@ -50,9 +50,8 @@
 }
 @media screen and (max-width: 480px) {
   .navbar li {
-  color: white;
-  font-size: 10px;
-  cursor: pointer;
+    margin-left: 2vw;
+
 }
 
 .navbar {
