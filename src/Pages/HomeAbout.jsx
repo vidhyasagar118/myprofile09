@@ -66,6 +66,7 @@ const HomeAbout = () => {
           <h3>My Philosophy: Code that matters.</h3>
 
           <p>
+            My name  is <b>VIDHYA SAGAR KUSHWAHA  .</b>  
             I am a passionate Full-Stack Developer with 1 year of experience
             focusing on building clean, efficient, and user-centric web
             applications. My goal is to transform complex problems into elegant,
