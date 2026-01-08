@@ -30,7 +30,8 @@ const Skills = () => {
     "MongoDB",
     "HTML",
     "CSS",
-    "Git & GitHub"
+    "Git & GitHub",
+    "Editing"
   ];
 
   return (
