@@ -2,7 +2,7 @@
 
 .section1 {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 60vh;
     background: black;
     color: white;
     margin-top: 100px;
@@ -142,8 +142,8 @@
 
 @media screen and (max-width: 480px) {
 .section1{
-margin-top: 50px;
-        min-height: 20vh;
+margin-top: 90px;
+        min-height: 40vh;
         margin-bottom:40px;
 
 }
