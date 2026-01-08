@@ -55,7 +55,6 @@ const HomeAbout = () => {
         <h2 className="About">About Us</h2>
 
         <div className="about-content">
-          <h2>About Vidhya Sagar</h2>
 
         <img
   src={profileImg}
