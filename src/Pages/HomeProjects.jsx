@@ -28,7 +28,7 @@ const projects = [
     description:
     "A cross-platform, mobile-first to-do list app that helps users create, manage, and track daily tasks with real-time sync and push notifications on Android and iOS.",
     techStack: "Html ,css ,express js &node js",
-    image: "Todolistimg",
+    image: Todolistimg,
     github: "https://github.com/vidhyasagar118/Todolist",
     demo: "todolist-one-smoky.vercel.app"
   }
