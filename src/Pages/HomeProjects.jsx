@@ -36,11 +36,11 @@ const projects = [
  {
     title: " small multiple projects",
     description:
-    "A cross-platform, mobile-first to-do list app that helps users create, manage, and track daily tasks with real-time sync and push notifications on Android and iOS.",
+    "it is a collection of many small projects like CALCULATOR ,LOttery system,ludo btns ,todo list and etc..,",
     techStack: "Html ,css ,express js &node js",
     image: "https://via.placeholder.com/600x400/21262d?text=Mobile+Chat+App",
-    github: "https://github.com/vidhyasagar/mobile-chat-app",
-    demo: "https://demo.vidhyasagar.dev/chat"
+    github: "https://github.com/vidhyasagar118/smallproject",
+    demo: "https://smallproject-eta.vercel.app/"
   }
 ];
 
