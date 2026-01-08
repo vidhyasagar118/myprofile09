@@ -1,96 +1,80 @@
 .section5 {
-  width: 100vw;
-  min-height: 90vh;
-  background-color: #0b0b0b;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+  width: 100%;
+  min-height: 80vh;
+  padding: 50px 20px;
+  background: rgba(15,15,15,0.9); /* slightly lighter than body black */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  color: #e0e6ed;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .section5-heading {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-  padding: 20px 40px;
-  width: 100%;
-  max-width: 1200px;
+  font-size: 32px;
+  color:white;
   text-align: center;
-  background: linear-gradient(135deg, #ff0080, #7928ca, #40e0d0);
-  color: white;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
-  animation: gradientShift 5s ease infinite;
-  font-weight: 700;
+  margin-bottom: 30px;
+  background-color: #ff4d6d;
+  border-radius: 10px;
+  width: 100vw;
+  padding: 5px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
-.section5-container {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  flex-wrap: wrap;
+.about-info {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  background: rgba(25,25,25,0.8);
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(88,166,255,0.15);
 }
 
-.section5-info {
-  max-width: 400px;
-  text-align: left;
-  animation: fadeInLeft 1.2s ease forwards;
-}
-
-.section5-profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #58a6ff;
-  margin-bottom: 20px;
-  animation: floatPhoto 4s ease-in-out infinite;
-}
-
-.section5-info h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.section5-info p {
-  font-size: 1rem;
-  color: #c9d1d9;
-  margin-bottom: 8px;
-}
-
-.section5-contact {
-  max-width: 300px;
-  text-align: left;
-  animation: fadeInRight 1.5s ease forwards;
-}
-
-.section5-contact h4 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.contact-links a {
-  display: block;
+.about-info p {
   margin-bottom: 15px;
-  color: #c9d1d9;
+  font-size: 17px;
+}
+
+.highlight {
+  color: #ff4d6d;
+  font-weight: 600;
+}
+
+.cert-link a {
+  color: #40e0d0;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.cert-link a:hover {
+  color: #ff0080;
   text-decoration: none;
-  font-weight: 700;
   transition: 0.3s;
 }
 
-.contact-links a:hover {
-  color: #58a6ff;
-  transform: scale(1.05);
+/* Contact buttons & info */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-details p {
+  font-size: 16px;
+  margin: 0;
 }
 
 .cta-button {
   display: inline-block;
-  margin-top: 20px;
   background: linear-gradient(135deg, #ff0080, #ff8c00, #40e0d0);
   color: white;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   padding: 12px 30px;
   border-radius: 25px;
   text-decoration: none;
@@ -103,40 +87,43 @@
 }
 
 .cta-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 30px rgba(255, 0, 128, 0.8);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 0, 128, 0.7);
   background-position: right center;
 }
 
-/* Animations */
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-@keyframes fadeInLeft {
-  0% { opacity: 0; transform: translateX(-100px); }
-  100% { opacity: 1; transform: translateX(0); }
-}
+/* ================= MOBILE RESPONSIVE ================= */
+@media screen and (max-width: 480px) {
 
-@keyframes fadeInRight {
-  0% { opacity: 0; transform: translateX(100px); }
-  100% { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes floatPhoto {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .section5-container {
-    flex-direction: column;
-    align-items: center;
+  .section5 {
+    padding: 30px 12px;
   }
-  .section5-info, .section5-contact {
-    text-align: center;
+
+  .section5-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .about-info {
+    padding: 18px 12px;
+  }
+
+  .about-info p {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    font-size: 1em;
+    padding: 10px 22px;
+  }
+
+  .contact-details p {
+    font-size: 14px;
   }
 }

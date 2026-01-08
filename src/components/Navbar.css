@@ -1,9 +1,12 @@
 .header {
+  margin-top: 5px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   background-color: black;
+    border: 5px solid white;
+
 }
 
 .navbar {
