@@ -30,7 +30,7 @@ const projects = [
     techStack: "HTML CSS, JS ,REACT",
     image: Todolistimg,
     github: "https://github.com/vidhyasagar118/Todolist",
-    demo: "todolist-one-smoky.vercel.app"
+    demo: "https://todolist-one-smoky.vercel.app/"
   }
 ,
  {
