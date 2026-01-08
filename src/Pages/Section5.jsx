@@ -1,4 +1,5 @@
 import "./Section5.css";
+import Pdfresume from "../assets/resume.pdf";
 
 const Section5 = () => {
   return (
@@ -34,9 +35,14 @@ const Section5 = () => {
       </div>
 
       <div className="contact-details">
-        <a href="/resume.pdf" download className="cta-button">
-          Download Resume
-        </a>
+      <a
+        href={Pdfresume}   // ✅ sahi
+        download="VidhyaSagar_Resume.pdf"
+        className="cta-button"
+      >
+        Download My Resume (PDF)
+      </a>
+      
 
         <p>Email: <span className="highlight">abhishekhkushwah.118@gmail.com</span></p>
         <p>Phone: <span className="highlight">6367697913</span></p>
