@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./HomeAbout.css";
 import profileImg from "../assets/profile.jpeg";
+import Pdfresume from "../assets/resume.pdf";
 
 const HomeAbout = () => {
   const aboutRef = useRef(null);
@@ -82,13 +83,14 @@ const HomeAbout = () => {
 
        
 <p style={{ marginTop: "20px" }}>
-  <a
-    href="/resume.pdf"
-    download="VidhyaSagar_Resume.pdf"
-    className="cta-button"
-  >
-    Download My Resume (PDF)
-  </a>
+ <a
+  href={Pdfresume}   // ✅ sahi
+  download="VidhyaSagar_Resume.pdf"
+  className="cta-button"
+>
+  Download My Resume (PDF)
+</a>
+
 </p>
         </div>
       </section>
