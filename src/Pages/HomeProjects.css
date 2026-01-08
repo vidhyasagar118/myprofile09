@@ -30,7 +30,7 @@
 .projects-grid {
   display: flex;
   flex-direction: column;  /* mobile = one card per row */
-  gap: 18px;
+  gap: 30px;
   margin: 0 auto;
 }
 
@@ -86,10 +86,10 @@
 
 .project-links a {
   display: inline-block;
-  color: #c9d1d9;
+  color: red;
   text-decoration: none;
   margin-right: 12px;
-  font-weight: 600;
+  font-weight: 1500;
   font-size: 13px;
 }
 
@@ -170,7 +170,7 @@
   }
 
   .project-info h3 {
-    font-size: 22px;
+    font-size: 32px;
   }
 
   .project-info p {

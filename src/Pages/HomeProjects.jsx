@@ -3,6 +3,7 @@ import "./HomeProjects.css"
 import EcomImage from "../assets/pro1.png"; 
 import FresherImage from "../assets/pro2.png"; 
 import Todolistimg from "../assets/pro3.png"; 
+import Smallproimg from "../assets/pro4.png"; 
 
 const projects = [
   {
@@ -38,7 +39,7 @@ const projects = [
     description:
     "it is a collection of many small projects like CALCULATOR ,LOttery system,ludo btns ,todo list and etc..,",
     techStack: "Html ,css ,express js &node js",
-    image: "https://via.placeholder.com/600x400/21262d?text=Mobile+Chat+App",
+    image:Smallproimg ,
     github: "https://github.com/vidhyasagar118/smallproject",
     demo: "https://smallproject-eta.vercel.app/"
   }
