@@ -1,0 +1,283 @@
+/* ================= HOME SECTION ================= */
+
+.section1 {
+    width: 100vw;
+    min-height: 60vh;
+    background: black;
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+/* MAIN FLEX CONTAINER */
+.infome {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* LEFT TEXT */
+.hname {
+    flex: 1;
+    min-width: 0;
+}
+
+/* NAME */
+.hname .profilename {
+    font-size: 50px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff0080, #7928ca, #ff0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradient 5s ease infinite;
+}
+
+/* I AM + ANIMATION */
+.codercont {
+    font-size: 38px;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+/* VISIBLE WINDOW */
+.codercont span.animated-text {
+    display: inline-block;
+    height: 1.3em;
+    overflow: hidden;
+    vertical-align: bottom;
+    color: #ff4d6d;
+}
+
+/* MOVING WORDS */
+.animated-text-inner {
+    display: flex;
+    flex-direction: column;
+    animation: slide 12s infinite ease-in-out;
+}
+
+.animated-text-inner span {
+    height: 1.3em;
+    line-height: 1.3em;
+}
+
+/* PERFECT SLIDE */
+@keyframes slide {
+    0%   { transform: translateY(0); }
+    16%  { transform: translateY(-1.3em); }
+    32%  { transform: translateY(-2.6em); }
+    48%  { transform: translateY(-3.9em); }
+    64%  { transform: translateY(-5.2em); }
+    80%  { transform: translateY(-5.2em); }
+    100% { transform: translateY(0); }
+}
+
+/* BUTTON */
+.aboutbtn {
+    background: rgb(240, 79, 79);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+}
+
+.aboutbtn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 128, 0.8);
+}
+
+/* RIGHT IMAGE */
+.photome {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 8px solid aquamarine;
+    object-fit: cover;
+    animation: floatPhoto 4s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+/* FLOAT */
+@keyframes floatPhoto {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+/* NAME GRADIENT */
+@keyframes textGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* FADE */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 480px) {
+.section1{
+        min-height: 40vh;
+
+}
+    .infome {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 10px;
+    }
+
+    .hname .profilename {
+        font-size: 32px;
+    }
+
+    .codercont {
+        font-size: 23px;
+        margin-top: 8px;
+    }
+
+    .aboutbtn {
+        padding: 8px 12px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .photome {
+        width: 110px;
+        height: 110px;
+        border-width: 4px;
+    }
+
+    .animated-text-inner {
+        animation-duration: 14s;
+    }
+}
+
+
+/* ================= TABLET ================= */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+    .infome {
+        flex-direction: row !important;
+        gap: 15px;
+    }
+
+    .hname .profilename {
+        font-size: 38px;
+    }
+
+    .codercont {
+        font-size: 24px;
+    }
+
+    .photome {
+        width: 220px;
+        height: 220px;
+    }
+}
+/* ================= ABOUT SECTION ================= */
+
+.section2 {
+    width: 100vw;
+    min-height: auto;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    overflow: hidden;
+    margin-top: 30px;   /* gap kam */
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.About {
+    background: #ff4d6d;
+    border-radius: 25px;
+    color: white;
+    padding: 8px 18px;
+    margin-bottom: 15px;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 18px 0;
+    border: 4px solid #58a6ff;
+    animation: floatPhoto 4s ease-in-out infinite;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 480px) {
+
+    .section2 {
+        margin-top: 15px;     /* section1 ke paas aayega */
+        padding: 20px 12px;
+        font-size: 16px;
+    }
+
+    .About {
+        font-size: 14px;
+        padding: 6px 14px;
+    }
+
+    .about-content {
+        line-height: 1.5;
+    }
+
+    .profile-photo {
+        width: 110px;
+        height: 110px;
+        margin: 12px 0;
+    }
+}
+
+
+/* ================= TABLET ================= */
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+    .section2 {
+        margin-top: 20px;
+        padding: 25px 15px;
+        font-size: 18px;
+    }
+
+    .profile-photo {
+        width: 130px;
+        height: 130px;
+    }
+}

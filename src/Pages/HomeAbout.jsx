@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Home.css";
+import "./HomeAbout.css";
 import profileImg from "../assets/profile.jpeg";
 
 const HomeAbout = () => {
@@ -33,14 +33,15 @@ const HomeAbout = () => {
               About Us
             </button>
 
-            <div className="welcome">Welcome to my profile</div>
+            {/* <div className="welcome">Welcome to my profile</div> */}
           </div>
-
+<div>
           <img
             src="https://imgs.search.brave.com/VisP5C1ecq1zMF2jPnX2Y1SZUum82HEO7dtVN0mzu-w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS1w/aG90by9oYWNrZXIt/dXNpbmctbGFwdG9w/LWhhY2tpbmctaW50/ZXJuZXQtMjYwbnct/NTAzMTUwMTg4Lmpw/Zw"
             className="photome"
             alt="profile"
           />
+          </div>
         </div>
       </section>
 

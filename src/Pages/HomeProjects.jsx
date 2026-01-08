@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Home.css"
+import "./HomeProjects.css"
 
 const projects = [
   {
