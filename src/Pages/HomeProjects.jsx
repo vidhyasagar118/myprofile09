@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import "./HomeProjects.css"
+import EcomImage from "../assets/pro1.png"; 
+import FresherImage from "../assets/pro2.png"; 
 
 const projects = [
   {
@@ -7,7 +9,7 @@ const projects = [
     description:
       "A full-stack solution featuring user authentication, Stripe integration, and a dedicated admin dashboard.",
     techStack: "Node.js,react, CSS, MongoDB",
-    image: "https://via.placeholder.com/600x400/21262d?text=E-Commerce+App",
+    image: EcomImage,
     github: "https://github.com/vidhyasagar118/chpromakerfrontend",
     demo: "https://chpromakerfrontend-xw5v.vercel.app/"
   },
@@ -15,7 +17,7 @@ const projects = [
   title: "Freshers Voting Site",
   description:   "An online voting platform built to select Mr. and Ms. Freshers, allowing students to securely vote for candidates with real-time result tracking and admin management.",
   techStack: "node js, react,Mongodb altas,express",
-  image: "https://via.placeholder.com/600x400/21262d?text=Analytics+Dashboard",
+  image: FresherImage,
   github: "https://github.com/vidhyasagar118/freshers.com",
   demo: "https://freshers1.vercel.app/"
 }
