@@ -21,7 +21,7 @@ const projects = [
   techStack: "node js, react,Mongodb altas,express",
   image: FresherImage,
   github: "https://github.com/vidhyasagar118/freshers.com",
-  demo: "https://freshers1.vercel.app/"
+  demo: "https://freshersfrontend.vercel.app/"
 }
 ,
   {
